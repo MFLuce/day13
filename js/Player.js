@@ -1,6 +1,8 @@
 class Player {
   constructor() {
+    // initial x value
     this.x = 0;
+    // initial y value
     this.y = 0;
     this.width = 50;
     this.height = 50;
@@ -12,6 +14,7 @@ class Player {
   draw() {
     this.move();
     this.maintainBoundaries();
+    // 👇 THIS IS P5 Function
     image(andresPicture, this.x, this.y, this.width, this.height);
   }
 
@@ -33,6 +36,7 @@ class Player {
   }
 
   move() {
+    // THESE ARE P5 Functions
     if (keyIsDown(DOWN_ARROW)) {
       this.y += this.speed;
     }
@@ -45,5 +49,20 @@ class Player {
     if (keyIsDown(UP_ARROW)) {
       this.y -= this.speed;
     }
+  }
+
+  get bottomSide() {
+    return this.y + this.height;
+  }
+
+  get topSide() {
+    return this.y;
+  }
+
+  get leftSide() {
+    return this.x;
+  }
+  get rightSide() {
+    return this.x + this.width;
   }
 }

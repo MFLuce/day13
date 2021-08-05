@@ -5,3 +5,16 @@ const UP_ARROW = 38;
 const LEFT_ARROW = 37;
 const RIGHT_ARROW = 39;
 const scoreHolder = document.querySelector("h1 span");
+
+const colors = [
+  "blue",
+  "red",
+  "purple",
+  "magenta",
+  "pink",
+  "black",
+  "violet",
+  "green",
+  "yellow",
+  "orange",
+];

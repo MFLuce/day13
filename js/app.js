@@ -5,8 +5,8 @@ function draw() {
 }
 
 function setup() {
-  console.log("andresPicture:", andresPicture);
-  console.log("SETUP");
+  // console.log("andresPicture:", andresPicture);
+  // console.log("SETUP");
   game.setup();
 }
 
